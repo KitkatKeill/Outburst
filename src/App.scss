@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Norican&display=swap');
+
 body {
    margin: 0;
    background: #282937;
-   font-family: 'Helvetica', 'Helvetica Nueue', sans-serif;
+   background-image: url("GoldBG.png");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   font-family: 'Norican', 'Helvetica Nueue', sans-serif;
  }
  
  button {
@@ -21,7 +27,7 @@ body {
    min-height: 100vh;
    align-items: center;
    justify-content: center;
-   color: #fafafa;
+   color: #000000;
  }
  
  .time-circle {
@@ -31,7 +37,7 @@ body {
    display: grid;
  
    &::before {
-     border: 3px solid #fafafa;
+     border: 3px solid #000000;
      border-radius: 100%;
      animation: 1s linear infinite alternate abberation, 4s linear infinite spin;
      padding-top: 100%;
@@ -49,10 +55,10 @@ body {
  
  @keyframes abberation {
    from {
-     box-shadow: 0 0 0 0 #CB2918, 0 0 0 0 #56719A;
+     box-shadow: 0 0 0 0 #9E8A17, 0 0 0 0 #4A4008;
    }
    to {
-     box-shadow: 0.25rem 0.125rem 0 0 #CB2918, -0.25rem -0.125rem 0 0 #56719A;
+     box-shadow: 0.25rem 0.125rem 0 0 #4A4008, -0.25rem -0.125rem 0 0 #eeff00;
    }
  }
  
@@ -94,13 +100,13 @@ body {
      margin: 0;
      border: none;
      border-radius: 50%;
-     background: #6C7CB3;
+     background: #000000;
      cursor: pointer;
      transition: background 0.3s;
-     color: white;
+     color: #EFD956;
  
      &:hover {
-       background: darken(#6C7CB3, 10%);
+       background: darken(#797448, 10%);
      }
    }
  
@@ -109,9 +115,10 @@ body {
      padding: 0;
      margin: 0;
      background: none;
-     color: #fafafa;
+     color: #000000;
      font-weight: bold;
      font-size: 1.5rem;
+     font-family: 'Fira Code';
      cursor: pointer;
  
      &:disabled {

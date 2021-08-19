@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 import "./App.scss";
 
 function Timer({ setCountdown }) {
-   const [seconds, setSeconds] = useState(60);
+   const [seconds, setSeconds] = useState(5);
    const [isRunning, setIsRunning] = useState(false);
 
    useEffect(() => {
@@ -39,8 +39,8 @@ function Timer({ setCountdown }) {
             disabled={!isRunning} 
             className="reset" 
             onClick={() => {
-               setIsRunning(true);
-               setSeconds(60);
+               setIsRunning(false);
+               setSeconds(5);
          }}>
               Reset
          </button>
