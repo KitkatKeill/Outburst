@@ -41,6 +41,7 @@ function Timer({ setCountdown }) {
             onClick={() => {
                setIsRunning(false);
                setSeconds(5);
+               setCountdown(false);
          }}>
               Reset
          </button>
